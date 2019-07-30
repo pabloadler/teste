@@ -51,18 +51,18 @@
         init: function() {
           // Set up initial state and variables.
           this.toggle = false;
-          this.vid = document.querySelector("#vid2");
-          this.vid.pause();
+          this.vid2 = document.querySelector("#vid2");
+          this.vid2.pause();
         },
         tick: function() {
           if (this.el.object3D.visible == true) {
             if (!this.toggle) {
               this.toggle = true;
-              this.vid.play();
+              this.vid2.play();
             }
           } else {
             this.toggle = false;
-            this.vid.pause();
+            this.vid2.pause();
           }
         }
       });
